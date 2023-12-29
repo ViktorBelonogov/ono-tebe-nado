@@ -1,1 +1,335 @@
+.header {
+    display: grid;
+    grid-template-columns: repeat(12,3fr);
+    justify-content: space-between;
+    align-items: center;
+    padding: 92px 24px 91px 24px;
+    font-size: 18px;
+    font-style: normal;
+}
 
+.header__menu {
+    display: grid;
+    justify-content: start;
+    grid-column: 5 span;
+}
+
+.header__links-list {
+    display: flex;
+    margin-left: 35px;
+    column-gap: 32px;
+    text-underline-offset: 4px;
+    list-style-type: circle;
+}
+
+.header__logo {
+    grid-column: 2 span;
+    justify-self: center;
+}
+
+.header__logo-img {
+    display: flex;
+    width: 148px;
+    height: 105px;
+}
+
+.header__links-list-item_no-bullit {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.header__address {
+    grid-column: 5 span;
+    justify-self: end;
+    font-size: 18px;
+    font-style: normal;
+    margin-right: 30px;
+    line-height: 1.35;
+    text-underline-offset: 4px;
+}
+
+.cover {
+    position: relative;
+    max-height: 757px;
+    margin: 0 auto;
+    background-image: url("../images/cover.jpg");
+    background-size: cover;
+}
+
+.cover__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.cover__title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 162px 56px 131px 56px;
+    gap: 18px;
+    color: #fff;
+    font-size: 100px;
+    line-height: 1.15;
+    letter-spacing: 60px;
+    text-transform: uppercase;
+}
+
+.aligned-text {
+    display: flex;
+    line-height: 115%;
+    align-self: start;
+    letter-spacing: 30px;
+}
+
+.letter-spacing-extended-left {
+    margin-left: 30px;
+}
+  
+.letter-spacing-extended {
+    display: flex;
+    letter-spacing: 55px;
+}
+
+.aligned-text_center {
+    display: flex;
+    margin-left: 283px;
+    line-height: 100%;
+    letter-spacing: 30px;
+}
+  
+.aligned-text_right {
+    display: flex;
+    align-self: end;
+    line-height: 100%;
+    letter-spacing: 30px;
+}
+  
+.no-letter-spacing {
+    letter-spacing: 0;
+}
+
+.cover__description {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 48px;
+    padding: 0 58px 73px 89px;
+}
+  
+.cover__description-text {
+    color: #fff;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    word-spacing: 16px;
+}
+
+.bet-button {
+    border: 1px solid #fff;
+    padding: 12px 29px 12px 30px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: transparent;
+}
+
+.lots {
+    margin: 163px 33px 29px 33px;
+    width: 1034px;
+    height: 682px;
+    flex-shrink: 0;
+}
+
+.lots__heading {
+    margin: 0 0 27px 37px;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.overlay__card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.lots__card-list {
+    display: flex;
+    gap: 25px;
+}
+
+.lots__card-list-item {
+    list-style-type: none;
+}
+
+.card__link {
+    display: block;
+    text-decoration: none;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    width: 328px;
+    height: 554px;
+}
+
+.card__title {
+    padding: 48px 40px 0;
+    margin-bottom: -6px;
+    color: #FFF;
+    font-size: 22px;
+    line-height: 1.20;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.card__text {
+    display: flex;
+    padding: 0 35px 46px 39px;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 20px;
+    line-height: 1.20;
+    z-index: 1;
+    align-items: flex-end;  
+}
+
+.card_type_film {
+    background-image: url(/images/card-lot-01.jpg);
+    background-size: cover;
+
+}
+
+.card_type_book {
+    background-image: url(/images/card-lot-02.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card_type_picture {
+    background-image: url(/images/card-lot-03.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.lots__look-more-link {
+    display: block;
+    padding: 29px 0 0 39px;
+    font-size: 20px;
+    text-underline-offset: 4px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 177px 0;
+    justify-content: center;
+}
+
+.logo__column {
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.about__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 237px;
+    height: 237px;
+    border-radius: 50%;
+    background: #000;
+}
+
+.about__logo-image {
+    display: block;
+    width: 148px;
+    height: 114px;
+}
+
+.about__column {
+    display: grid;
+    grid-template-rows: 3fr;
+}
+
+.about__title {
+    color: #000;
+    font-family: Raleway;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 100px 0 100px 20px;
+}
+
+.about__text {
+    color: #000;
+    font-size: 20px;
+    line-height: normal;
+    padding-bottom: 24px;
+    margin-right: 21px;
+    margin-left: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: -23px;
+    margin-left: 58px;
+    margin-right: 58px;
+    margin-bottom: 89px;
+}
+
+.footer__adress {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    /* margin: auto 0; */
+    font-size: 18px;
+    line-height: 1.35;
+    text-underline-offset: 4px;
+}
+
+.footer__menu {
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.footer__links-list {
+    list-style-type: none;
+    text-underline-offset: 4px;
+}
+
+.footer__social-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 48px;
+    list-style-type: none;
+}
+
+.footer__social-list-item {
+    width: 48px;
+}
