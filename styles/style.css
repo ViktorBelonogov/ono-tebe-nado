@@ -210,13 +210,12 @@
     font-size: 20px;
     line-height: 1.20;
     z-index: 1;
-    align-items: flex-end;  
+    align-items: flex-end;
 }
 
 .card_type_film {
     background-image: url(/images/card-lot-01.jpg);
     background-size: cover;
-
 }
 
 .card_type_book {
